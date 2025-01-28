@@ -1,0 +1,7 @@
+name = "PICSModel"
+uuid = "dfcff424-742a-4ee9-b9f9-cf796b0bcf24"
+authors = ["Lucas Valenzuela"]
+version = "0.1.0"
+
+[compat]
+julia = "1.10"
