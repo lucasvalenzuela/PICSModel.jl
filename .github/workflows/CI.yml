@@ -82,8 +82,11 @@ jobs:
       - name: Download private registry
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+        shell: julia
         run: |
-          julia -e "using Pkg; Registry.add("General"); Registry.add(RegistrySpec(url=ARGS[1]))" "git@gitlab.com:juliacosmosims/CosmoSimsRegistry.git"
+          using Pkg
+          Registry.add("General")
+          Registry.add(RegistrySpec(url="git@gitlab.com:juliacosmosims/CosmoSimsRegistry.git"))
       - uses: julia-actions/cache@v2
       - name: Configure doc environment
         shell: julia --project=docs --color=yes {0}
