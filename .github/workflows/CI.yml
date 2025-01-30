@@ -83,7 +83,7 @@ jobs:
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
         run: |
-          julia -e "using Pkg; Registry.add(RegistrySpec(url=ARGS[1]))" "git@gitlab.com:juliacosmosims/CosmoSimsRegistry.git"
+          julia -e "using Pkg; Registry.add("General"); Registry.add(RegistrySpec(url=ARGS[1]))" "git@gitlab.com:juliacosmosims/CosmoSimsRegistry.git"
       - uses: julia-actions/cache@v2
       - name: Configure doc environment
         shell: julia --project=docs --color=yes {0}
