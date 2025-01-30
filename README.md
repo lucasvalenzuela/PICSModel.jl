@@ -1,8 +1,5 @@
 # PICSModel.jl
 
-[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://lucasvalenzuela.github.io/PICSModel.jl/dev/)
-[![Build Status](https://github.com/lucasvalenzuela/PICSModel.jl/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/lucasvalenzuela/PICSModel.jl/actions/workflows/CI.yml?query=branch%3Amain)
-
 This Julia package is the implementation of PICS (Planetary nebulae In Cosmological Simulations),
 a framework for modeling planetary nebulae (PNe) in single stellar populations (SSPs). This can be
 applied to the stellar particles in cosmological simulations as well as measured star formation
