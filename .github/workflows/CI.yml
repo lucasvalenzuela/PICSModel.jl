@@ -82,7 +82,7 @@ jobs:
       - name: Download private registry
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-        shell: julia
+        shell: julia {0}
         run: |
           using Pkg
           Registry.add("General")
